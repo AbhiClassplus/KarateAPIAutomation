@@ -24,7 +24,7 @@ public class TestUIRunner {
 	   	   
 	   @Test
 	    void testParallel() {
-	        Results results = Runner.path("classpath:com/karate/runner").outputCucumberJson(true).parallel(1);
+	        Results results = Runner.path("classpath:com/karate/uirunner").outputCucumberJson(true).parallel(1);
 	        generateReport(results.getReportDir());
 	        assertEquals(0, results.getFailCount(), results.getErrorMessages());
 	    }
